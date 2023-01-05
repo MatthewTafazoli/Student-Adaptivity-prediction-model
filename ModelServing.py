@@ -149,7 +149,7 @@ def json_pred():
                 if value == None:
                     yield f"Spelling/Case/Value problem with index #{i}" + "\n"
         else:
-            loaded_model = joblib.load('Riiid_model.sav')
+            loaded_model = joblib.load('AdaptivityClassifier.sav')
             query = np.reshape(query_values, (-1, 1)).T
             prediction = loaded_model.predict(query)
             if prediction[0] == 0:
