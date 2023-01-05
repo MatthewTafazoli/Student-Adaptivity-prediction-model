@@ -1,5 +1,14 @@
 # Student Adaptivity Prediction Model
 
+## Repository Overview
+- **AdaptivityClassifier.sav**: Saved model trained by notebook and used for API
+- **AdaptivityClassifierTraining.ipynb**: Notebook for training the model and visualizing the data (reccommended to run in Colab)
+- **ExampleQuery.json**: Example .json file, this body can be provided to the API endpoint to produce a prediction
+- **ModelServing.py**: Code that sets up the API endpoint
+- **README.md**: Explanation of problem overview, dataset, training and deployement
+- **data.csv**: Data we use for training the model
+- **requirements.txt**: Run in clean Python 3.9 environment to install necessary packages for running the API
+
 ## Problem Description and Overview
 This repository seeks to create and serve a model that infers a student's adaptability based on the student's socio-demographic factors. The dataset is a table of the socio-demographic factors of many foreign-born student and their respective ability to adapt to an IT-centric education. 
 
